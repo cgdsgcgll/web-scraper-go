@@ -1,0 +1,988 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="keywords" content="TCCB, Cumhur, Cumhurbaşkanlığı, Türkiye Cumhuriyeti, Cumhurbaşkanı, Cumhurbaşkanları, Cumhurbaşkanlarımız, Cumhurbaşkanımız, Cumhurbaşkanlığı Külliyesi, Beştepe, Külliye, Recep Tayyip Erdoğan, Emine Erdoğan, Genel Sekreter, Genel Sekreterlik, First Leydi, First Lady, Emine Hanım, Beştepe Yerleşkesi, Fors, Cumhurbaşkanlığı Forsu, Tarabya Yerleşkesi, Okluk Yerleşkesi, Muhafız Alayı">
+    <meta name="description" content="Türkiye Cumhuriyeti Cumhurbaşkanlığı Resmî Sitesi">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Language" content="tr" id="locale">
+    <meta name="author" content="cumhurbaskanligi@tccb.gov.tr">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=1024">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <link rel="shortcut icon" type="image/ico" href="/Images/favicon.ico">
+    
+    
+
+
+    <link href="/Content/stil?v=sRR_i4mCwMsrdBvusXx9yEvGC2Z9xRtjvAR3cDfInc01" rel="stylesheet"/>
+
+    <link href="/Content/reset?v=5vkXSNk_6PdPFZgdpn5Vdca6TF6tstJ_QG-_g1iWNK81" rel="stylesheet"/>
+
+
+<link href="/Content/base?v=Wchrh5yPZ7XthDlHFqEKI-GPgu2cVBvDRE5wUwHmuJo1" rel="stylesheet"/>
+
+    <link href="/Content/colorbox?v=8gdd8cgyWtUBN69QOED2oYTc4APKKuyrMsp1Mj-oc1A1" rel="stylesheet"/>
+
+    
+
+
+    <link type="text/css" rel="stylesheet" href="/Content/Frontside/content-print.css" media="print">
+
+
+    <script src="/bundles/Tccb?v=Y1qXj8ZjFC7GYw3stEHree5wJcN7WTRVQZ7Ze8pNwc01"></script>
+
+    <script src="/bundles/colorbox?v=AALYn6cugWGa3KhDLdZX-01Xst-gsW7dMjB9suwaUH01"></script>
+
+    
+    <script type="text/javascript">
+
+        function GetNews(clickedElement, haberId) {
+
+            var currentHaber = $(".aktifHaber");
+            currentHaber.removeClass('aktifHaber');
+            currentHaber.hide();
+
+            var newHaber = $('#' + haberId);
+            newHaber.addClass('aktifHaber');
+            newHaber.show();
+
+            $('#highlights-navbar span').removeClass('current');
+            $('#highlights-navbar span[id="' + clickedElement.id + '"]').addClass('current');
+        }
+
+        $(document).ready(function() {
+            var seciliTabVal = 1;
+            if (seciliTabVal == 1) {
+                StatementTab1();
+            } else if (seciliTabVal == 2) {
+                StatementTab2();
+            } else {
+                StatementTab1();
+            }
+        });
+
+    </script>
+
+
+
+    <title>T.C.CUMHURBAŞKANLIĞI : Anasayfa</title>
+
+    <script type="text/javascript">
+        function AddColorbox() {
+            $('a[rel*=lightbox]').colorbox({
+                current: " {current} / {total}",
+                preloading: true,
+                title: true,
+                onComplete: function () {
+                    $('#cboxTitle').hide();
+                    link = $.fn.colorbox.element();
+                    title = $(link).attr('title');
+                    $('#cboxLoadedContent').append('<div>' + title + '</div>');
+                    $.fn.colorbox.resize();
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            AddColorbox();
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="https://www.tccb.gov.tr/assets/dosya/responsive/responsive.css" />
+    <script src="https://www.tccb.gov.tr/assets/dosya/responsive/responsive.js"></script>
+</head>
+<body>
+    <div id="tccbResponsive" style="display:none;"></div>
+    <div id="container-wrapper">
+        <div id="container">
+
+            
+
+            
+<link href="/Content/font-awesome/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript">
+
+    function SearchKeyword() {
+        var keyword = $('#search').val();
+        window.location.href = "/Search?s=" + keyword + "&langText=" + 'tr';
+        return false;
+    }
+
+    function SearchKeywordEnter(event) {
+        if (event.which == 13 || event.keyCode == 13) {
+            return SearchKeyword();
+        }
+    }
+
+</script>
+
+<style type="text/css">
+    .mobile #menu span {
+        padding: 0 5px !important;
+    }
+
+    .mobile #menu a {
+        font-size: 14px !important;
+    }
+
+    .linux #menu span {
+        padding: 0 5px !important;
+    }
+
+    .linux #menu a {
+        font-size: 14px !important;
+    }
+
+    .container-1 {
+        width: 100px;
+        white-space: nowrap;
+    }
+
+        .container-1 input#search {
+            width: 100px;
+            height: 20px;
+            background: #686b6f;
+            border: none;
+            font-size: 10pt;
+            color: white;
+            padding-left: 15px;
+            padding-right: 25px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+        }
+
+    .box {
+        width: 100px;
+        height: 32px;
+    }
+
+    .container-1 .icon {
+        position: absolute;
+        margin: 2px 0 0 113px !important;
+        z-index: 1;
+        color: #909395;
+    }
+
+    .container-1 input#search::-webkit-input-placeholder {
+        color: #909395;
+    }
+
+    .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+        color: #909395;
+    }
+
+    .container-1 input#search::-moz-placeholder { /* Firefox 19+ */
+        color: #909395;
+    }
+
+    .container-1 input#search:-ms-input-placeholder {
+        color: #909395;
+    }
+</style>
+
+
+
+
+<div id="header" style=""></div>
+<div id="menu">
+            <span data-categoryid="1" id="MenuLI_1"><a href="/" title="Ana Sayfa" id="1" class="">Ana Sayfa</a></span>
+            <span data-categoryid="2" id="MenuLI_2"><a href="/receptayyiperdogan/" title="Recep Tayyip Erdoğan" id="2" class="">Recep Tayyip Erdoğan</a></span>
+                <div class="drop_menu" id="divMenu_2">
+                    <div class="menu_list">
+                        <ul>
+                                    <li><a target="_self" href="/receptayyiperdogan/biyografi/" title="Biyografi">Biyografi</a></li>
+                                    <li><a target="_self" href="/receptayyiperdogan/portreler/" title="Portreler">Portreler</a></li>
+                                    <li><a target="_self" href="/receptayyiperdogan/mulakatlar/" title="M&#252;lakatlar">M&#252;lakatlar</a></li>
+                                    <li><a target="_self" href="/receptayyiperdogan/konusmalar/" title="Konuşmalar">Konuşmalar</a></li>
+                                    <li><a target="_self" href="/receptayyiperdogan/makaleler/" title="Makaleler">Makaleler</a></li>
+                                    <li><a target="_self" href="/receptayyiperdogan/yurticiziyaretler/" title="Yurt İ&#231;i Ziyaretler">Yurt İ&#231;i Ziyaretler</a></li>
+                                    <li><a target="_self" href="/receptayyiperdogan/yurtdisiziyaretler/" title="Yurt Dışı Ziyaretler">Yurt Dışı Ziyaretler</a></li>
+                                    <li><a target="_self" href="/receptayyiperdogan/konuk/" title="Konuklar">Konuklar</a></li>
+                                    <li><a target="_self" href="/ozeldosyalar/" title="&#214;zel Dosyalar">&#214;zel Dosyalar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <span data-categoryid="3" id="MenuLI_3"><a href="/emineerdogan/" title="Emine Erdoğan" id="3" class="">Emine Erdoğan</a></span>
+                <div class="drop_menu" id="divMenu_3">
+                    <div class="menu_list">
+                        <ul>
+                                    <li><a target="_self" href="/emineerdogan/biyografi/" title="Biyografi">Biyografi</a></li>
+                                    <li><a target="_self" href="/emineerdogan/portreler/" title="Portreler">Portreler</a></li>
+                                    <li><a target="_self" href="/emineerdogan/konusmalar/" title="Konuşmalar">Konuşmalar</a></li>
+                                    <li><a target="_self" href="/emineerdogan/yurticiziyaretler/" title="Yurt İ&#231;i Ziyaretler">Yurt İ&#231;i Ziyaretler</a></li>
+                                    <li><a target="_self" href="/emineerdogan/yurtdisiziyaretler/" title="Yurt Dışı Ziyaretler">Yurt Dışı Ziyaretler</a></li>
+                                    <li><a target="_self" href="/hanimefendi/projeler/" title="Himaye Edilen Projeler">Himaye Edilen Projeler</a></li>
+                                    <li><a target="_self" href="/emineerdogan/makaleveroportajlar/" title="Makale ve R&#246;portajlar">Makale ve R&#246;portajlar</a></li>
+                                    <li><a target="_self" href="/emineerdogan/videogaleri/" title="Video Galeri">Video Galeri</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <span data-categoryid="4" id="MenuLI_4"><a href="#/" title="Faaliyetler" id="4" class="">Faaliyetler</a></span>
+                <div class="drop_menu" id="divMenu_4">
+                    <div class="menu_list">
+                        <ul>
+                                    <li><a target="_self" href="/faaliyetler/basinaciklamalari/" title="Basın A&#231;ıklamaları">Basın A&#231;ıklamaları</a></li>
+                                    <li><a target="_self" href="/faaliyetler/cumhurbaskanligisozculugunden/" title="Cumhurbaşkanlığı S&#246;zc&#252;l&#252;ğ&#252;nden">Cumhurbaşkanlığı S&#246;zc&#252;l&#252;ğ&#252;nden</a></li>
+                                    <li><a target="_self" href="/faaliyetler/frekansbilgileri/" title="Frekans Bilgileri">Frekans Bilgileri</a></li>
+                                    <li><a target="_self" href="/faaliyetler/himaye-edilen-projeler/" title="Himaye Edilen Projeler">Himaye Edilen Projeler</a></li>
+                                    <li><a target="_self" href="/faaliyetler/tamamlanan-projeler/" title="Tamamlanan Projeler">Tamamlanan Projeler</a></li>
+                                    <li><a target="_self" href="/faaliyetler/15temmuz/" title="15 Temmuz">15 Temmuz</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <span data-categoryid="5" id="MenuLI_5"><a href="#/" title="Cumhurbaşkanlığı" id="5" class="">Cumhurbaşkanlığı</a></span>
+                <div class="drop_menu" id="divMenu_5">
+                    <div class="menu_list">
+                        <ul>
+                                    <li><a target="_self" href="/kabine/" title="Cumhurbaşkanlığı Kabinesi">Cumhurbaşkanlığı Kabinesi</a></li>
+                                    <li><a target="_self" href="/cumhurbaskanlarimiz/" title="Cumhurbaşkanlarımız">Cumhurbaşkanlarımız</a></li>
+                                    <li><a target="_self" href="/cumhurbaskanligi/genelsekreter/" title="Genel Sekreter">Genel Sekreter</a></li>
+                                    <li><a target="_self" href="/ozelkalem/" title="&#214;zel Kalem M&#252;d&#252;rleri">&#214;zel Kalem M&#252;d&#252;rleri</a></li>
+                                    <li><a target="_self" href="/cumhurbaskanligi/resmi-simgeler/bayrak/" title="Resm&#238; Simgeler">Resm&#238; Simgeler</a></li>
+                                    <li><a target="_self" href="/cumhurbaskanligi/gorev_yetki/" title="G&#246;rev ve Yetkiler">G&#246;rev ve Yetkiler</a></li>
+                                    <li><a target="_self" href="/cumhurbaskanligi/yerleskeler/tarabya_yerleskesi/" title="Tarabya Yerleşkesi">Tarabya Yerleşkesi</a></li>
+                                    <li><a target="_self" href="/muzekosk/" title="Atat&#252;rk M&#252;ze K&#246;şk&#252;">Atat&#252;rk M&#252;ze K&#246;şk&#252;</a></li>
+                                    <li><a target="_self" href="/cumhurbaskanligi/kongre-ve-kultur-merkezi/" title="Kongre ve K&#252;lt&#252;r Merkezi">Kongre ve K&#252;lt&#252;r Merkezi</a></li>
+                                    <li><a target="_self" href="/cumhurbaskanligi/millet-kutuphanesi/" title="Millet K&#252;t&#252;phanesi">Millet K&#252;t&#252;phanesi</a></li>
+                                    <li><a target="_self" href="/cumhurbaskanligi/arsivformu/" title="Arşiv Formu">Arşiv Formu</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <span data-categoryid="6" id="MenuLI_6"><a href="#/" title="Bilgi Edinme" id="6" class="">Bilgi Edinme</a></span>
+                <div class="drop_menu" id="divMenu_6">
+                    <div class="menu_list">
+                        <ul>
+                                    <li><a target="_blank" href="http://www.resmigazete.gov.tr/" title="Resm&#238; Gazete">Resm&#238; Gazete</a></li>
+                                    <li><a target="_blank" href="http://www.mevzuat.gov.tr/" title="e-Mevzuat">e-Mevzuat</a></li>
+                                    <li><a target="_blank" href="https://www.cimer.gov.tr/" title="CİMER">CİMER</a></li>
+                                    <li><a target="_blank" href="https://detsis.gov.tr/" title="DETSİS">DETSİS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <span data-categoryid="7" id="MenuLI_7"><a href="/iletisim/" title="İletişim" id="7" class="">İletişim</a></span>
+                <div class="drop_menu" id="divMenu_7">
+                    <div class="menu_list">
+                        <ul>
+                                    <li><a target="_self" href="/iletisim/" title="İletişim Bilgileri">İletişim Bilgileri</a></li>
+                                    <li><a target="_self" href="/iletisim/kurumsalkimlik/" title="Kurumsal Kimlik">Kurumsal Kimlik</a></li>
+                                    <li><a target="_self" href="/edevlet/" title="e-Devlet Kapısı">e-Devlet Kapısı</a></li>
+                        </ul>
+                    </div>
+                </div>
+        <span data-categoryid="12" id="MenuLI_12"><a href="#" title="Dil Seçimi" id="12">TR</a></span>
+        <div class="drop_menu" id="divMenu_12">
+            <div class="menu_list" style="min-width:20px !important;margin-top: 16px;">
+                <ul>
+                                            <li style="min-width:20px !important;text-align:center"><a href="/Home/ChangeLanguage/2/">EN</a></li>
+                                            <li style="min-width:20px !important;text-align:center"><a href="/Home/ChangeLanguage/3/">عربي</a></li>
+                                            <li style="min-width:20px !important;text-align:center"><a href="/Home/ChangeLanguage/4/">FR</a></li>
+                </ul>
+            </div>
+        </div>
+        <span style="" id="SearchBox">
+            <span class="container-1" style="border:none;">
+                <a href="#" onclick="SearchKeyword();"><span class="icon" style="border-right:none;"><i class="fa fa-search"></i></span></a>
+                <input onkeypress="SearchKeywordEnter(event);" type="text" id="search" placeholder="Ara..." />
+            </span>
+        </span>
+
+</div>
+
+            
+
+
+<div class="activeTabNumber"></div>
+
+
+
+
+
+
+<div id="canvas">
+
+    
+
+
+
+<div id="left-column">
+
+
+        <div id="box-daily-program">
+
+                <div id="box-daily-program-date-area">
+                    <p id="box-daily-program-date-area-day">18</p>
+                    <p id="box-daily-program-date-area-month-year"><span>Aralık</span>2025</p>
+                    <p id="box-daily-program-date-area-dayname">Perşembe</p>
+                </div>
+                <div id="box-date-program-list-area">
+
+                        <dl>
+                            <dt>18:00</dt>
+                            <dd>Cumhurbaşkanlığı K&#252;lt&#252;r ve Sanat B&#252;y&#252;k &#214;d&#252;lleri (Beştepe Millet Kongre ve K&#252;lt&#252;r Merkezi)</dd>
+                        </dl>
+
+                    <p id="box-date-program-list-area-browse-all">
+                        <a href="/program/">Program Arşivi</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="/faaliyetler/frekansbilgileri/">Frekans Bilgileri</a>
+                    </p>
+                </div>
+						        </div>
+
+<div id="left-sub-pages-include">
+<p><a href="/faaliyetler/15temmuz/" target="_self"><img alt="15 Temmuz" src="/assets/resim/banner/solbanner/2016-09-23-15temmuz-tr.jpg" /></a></p>
+
+<div class="ayracGriSerit">&nbsp;</div>
+
+<p><a href="/assets/dosya/15Temmuz/onsorudafeto_tr_en.pdf" target="_blank"><img alt="10 Soruda FETÖ" src="/assets/resim/banner/solbanner/2016-12-06-onsorudafeto.jpg" /></a></p>
+
+<div class="ayracGriSerit">&nbsp;</div>
+
+<div id="solmenulinkleri"><a href="http://www.resmigazete.gov.tr/" target="_blank"><img src="/assets/resim/banner/solmenu/resmigazete3.png" style="float:left;" /></a> <a href="http://www.mevzuat.gov.tr/" target="_blank"><img src="/assets/resim/banner/solmenu/sm2-mevzuat3.png" style="float:left;" /></a> <a href="http://www.cimer.gov.tr/" target="_blank"><img src="/assets/resim/banner/solmenu/sm3-cimer.png" style="float:left;" /></a> <a href="https://detsis.gov.tr/" target="_blank"><img src="/assets/resim/banner/solmenu/solmenu-detsis-dtmks.png" style="float:left;" /></a> <a href="/resmiyazisma"><img src="/assets/resim/banner/solmenu/sm-resmiyazisma.png" style="float:left;" /></a> <a href="https://www.tccb.gov.tr/fotogaleri/"><img src="/assets/resim/banner/solmenu/sm4-fotogaleri.png" style="float:left;" /></a> <a href="https://www.tccb.gov.tr/videogaleri/"><img src="/assets/resim/banner/solmenu/sm5-videogaleri.png" style="float:left;" /></a> <a href="https://www.tccb.gov.tr/common/sanaltur/tur/index.html" target="_blank"><img src="/assets/resim/banner/solmenu/sm6-sanaltur.png" style="float:left;" /></a>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+</div>
+
+</div>
+
+    <div id="right-column">
+        <div id="highlights">
+            <div id="highlights-sablon">
+                <div id="highlights-main" style="display: block;">
+
+                        <div class="aktifHaber" id="haber1" style="">
+                            <h1>
+                                <a href="/haberler/410/163502/-turkiye-nin-guclu-olmak-disinda-secenegi-yoktur-">
+                                    &quot;T&#252;rkiye&#39;nin g&#252;&#231;l&#252; olmak dışında se&#231;eneği yoktur&quot;
+                                </a>
+                            </h1>
+                            <div id="highlights-wrapper">
+                                <div id="highlights-main-media">
+                                    <a href="/haberler/410/163502/-turkiye-nin-guclu-olmak-disinda-secenegi-yoktur-">
+                                        <img src="/assets/resim/haberler/2025B/2025-12-16-BuyukelcilerKonferansi.jpg" width="400" alt="&quot;T&#252;rkiye&#39;nin g&#252;&#231;l&#252; olmak dışında se&#231;eneği yoktur&quot;" title="">
+                                    </a>
+                                </div>
+                                <span id="highlights-foto-album-image-list" style="display: none;">
+                                </span>
+                                <div id="highlights-other-news">
+                                    <p id="highlights-main-description">
+                                        <a id="spotlink" href="/haberler/410/163502/-turkiye-nin-guclu-olmak-disinda-secenegi-yoktur-">
+                                            Cumhurbaşkanı Erdoğan, 16. B&#252;y&#252;kel&#231;iler Konferansı’nda yaptığı konuşmada, &quot;T&#252;rkiye&#39;nin hem kendi hak ve &#231;ıkarlarını layıkıyla savunabilmesi, hem de dost, soydaş ve kardeşlerine yardım eli uzatabilmesi i&#231;in ekonomik, asker&#238;, diplomatik bakımdan g&#252;&#231;l&#252; olmak dışında bir se&#231;eneği yoktur. Tecr&#252;beyle sabit bu acı hakikat karşısında biz de stratejilerimizi belirliyor, adımlarımızı planlıyor, yere sağlam basıyor, hi&#231;bir işi şansa bırakmıyoruz” dedi.
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="" id="haber2" style="display:none;">
+                            <h1>
+                                <a href="/haberler/410/163506/emine-erdogan-hind-rajab-in-sesi-filminin-ozel-gosterimine-katildi">
+                                    Emine Erdoğan, &quot;Hind Rajab&#39;ın Sesi&quot; filminin &#246;zel g&#246;sterimine katıldı
+                                </a>
+                            </h1>
+                            <div id="highlights-wrapper">
+                                <div id="highlights-main-media">
+                                    <a href="/haberler/410/163506/emine-erdogan-hind-rajab-in-sesi-filminin-ozel-gosterimine-katildi">
+                                        <img src="/assets/resim/haberler/2025B/2025-12-16-EmineErdogan-FilmGosterimi.jpg" width="400" alt="Emine Erdoğan, &quot;Hind Rajab&#39;ın Sesi&quot; filminin &#246;zel g&#246;sterimine katıldı" title="">
+                                    </a>
+                                </div>
+                                <span id="highlights-foto-album-image-list" style="display: none;">
+                                </span>
+                                <div id="highlights-other-news">
+                                    <p id="highlights-main-description">
+                                        <a id="spotlink" href="/haberler/410/163506/emine-erdogan-hind-rajab-in-sesi-filminin-ozel-gosterimine-katildi">
+                                            Cumhurbaşkanı Recep Tayyip Erdoğan&#39;ın eşi Emine Erdoğan, Beştepe Millet Kongre ve K&#252;lt&#252;r Merkezi&#39;nde y&#246;netmenliğini ve senaristliğini Tunuslu y&#246;netmen Kaouther Ben Hania&#39;nın &#252;stlendiği &quot;Hind Rajab&#39;ın Sesi&quot; filminin &#246;zel g&#246;sterimine katıldı.
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="" id="haber3" style="display:none;">
+                            <h1>
+                                <a href="/haberler/410/163495/-86-milyon-birlik-ve-beraberlik-icinde-her-alanda-buyuk-bir-atilim-h-lindeyiz-">
+                                    “86 milyon birlik ve beraberlik i&#231;inde her alanda b&#252;y&#252;k bir atılım h&#226;lindeyiz”
+                                </a>
+                            </h1>
+                            <div id="highlights-wrapper">
+                                <div id="highlights-main-media">
+                                    <a href="/haberler/410/163495/-86-milyon-birlik-ve-beraberlik-icinde-her-alanda-buyuk-bir-atilim-h-lindeyiz-">
+                                        <img src="/assets/resim/haberler/2025B/2025-12-15-Kabine-Bt.jpg" width="400" alt="“86 milyon birlik ve beraberlik i&#231;inde her alanda b&#252;y&#252;k bir atılım h&#226;lindeyiz”" title="">
+                                    </a>
+                                </div>
+                                <span id="highlights-foto-album-image-list" style="display: none;">
+                                </span>
+                                <div id="highlights-other-news">
+                                    <p id="highlights-main-description">
+                                        <a id="spotlink" href="/haberler/410/163495/-86-milyon-birlik-ve-beraberlik-icinde-her-alanda-buyuk-bir-atilim-h-lindeyiz-">
+                                            Cumhurbaşkanı Erdoğan, Cumhurbaşkanlığı Kabinesi Toplantısı’nın ardından yaptığı a&#231;ıklamada, “86 milyon birlik ve beraberlik i&#231;inde, birbirimizden g&#252;&#231; ve cesaret alarak her alanda b&#252;y&#252;k bir atılım h&#226;lindeyiz. D&#252;nyada, merkezinde b&#246;lgemizin olduğu sancılı bir d&#246;n&#252;ş&#252;m yaşanırken, T&#252;rkiye olarak belirlediğimiz hedeflere doğru adım adım kararlılıkla ilerliyoruz” dedi.
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="" id="haber4" style="display:none;">
+                            <h1>
+                                <a href="/haberler/410/163491/cumhurbaskanligi-kabinesi-cumhurbaskani-erdogan-baskanliginda-toplandi">
+                                    Cumhurbaşkanlığı Kabinesi, Cumhurbaşkanı Erdoğan başkanlığında toplandı
+                                </a>
+                            </h1>
+                            <div id="highlights-wrapper">
+                                <div id="highlights-main-media">
+                                    <a href="/haberler/410/163491/cumhurbaskanligi-kabinesi-cumhurbaskani-erdogan-baskanliginda-toplandi">
+                                        <img src="/assets/resim/haberler/2025B/2025-12-15-Kabine.jpg" width="400" alt="Cumhurbaşkanlığı Kabinesi, Cumhurbaşkanı Erdoğan başkanlığında toplandı" title="">
+                                    </a>
+                                </div>
+                                <span id="highlights-foto-album-image-list" style="display: none;">
+                                </span>
+                                <div id="highlights-other-news">
+                                    <p id="highlights-main-description">
+                                        <a id="spotlink" href="/haberler/410/163491/cumhurbaskanligi-kabinesi-cumhurbaskani-erdogan-baskanliginda-toplandi">
+                                            Cumhurbaşkanlığı Kabinesi, Cumhurbaşkanı Recep Tayyip Erdoğan’ın başkanlığında Cumhurbaşkanlığı K&#252;lliyesinde toplandı.
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="" id="haber5" style="display:none;">
+                            <h1>
+                                <a href="/haberler/410/163487/-turk-devletleriyle-dis-ticaretimizi-uzun-vadede-100-milyar-dolara-cikarmayi-hedefliyoruz-">
+                                    “T&#252;rk devletleriyle dış ticaretimizi, uzun vadede 100 milyar dolara &#231;ıkarmayı hedefliyoruz”
+                                </a>
+                            </h1>
+                            <div id="highlights-wrapper">
+                                <div id="highlights-main-media">
+                                    <a href="/haberler/410/163487/-turk-devletleriyle-dis-ticaretimizi-uzun-vadede-100-milyar-dolara-cikarmayi-hedefliyoruz-">
+                                        <img src="/assets/resim/haberler/2025B/2025-12-15-AKParti.jpg" width="400" alt="“T&#252;rk devletleriyle dış ticaretimizi, uzun vadede 100 milyar dolara &#231;ıkarmayı hedefliyoruz”" title="">
+                                    </a>
+                                </div>
+                                <span id="highlights-foto-album-image-list" style="display: none;">
+                                </span>
+                                <div id="highlights-other-news">
+                                    <p id="highlights-main-description">
+                                        <a id="spotlink" href="/haberler/410/163487/-turk-devletleriyle-dis-ticaretimizi-uzun-vadede-100-milyar-dolara-cikarmayi-hedefliyoruz-">
+                                            Cumhurbaşkanı Erdoğan, “AK Parti T&#252;rk D&#252;nyası Vizyon Belgesi Tanıtım Programı”nda yaptığı konuşmada, “Bir&#231;ok başlığın yanında bilhassa ekonomik alandaki stratejiler vizyon belgemizin belkemiğini oluşturmaktadır. Ticaret hacminin genişletilmesi, yatırım ortamının iyileştirilmesi ve ortak pazar hedefi mevcut ekonomik ilişkileri yeni bir d&#252;zeye taşıyacaktır. T&#252;rk devletleriyle dış ticaretimizi orta vadede 60 milyar dolara, uzun vadede 100 milyar dolara &#231;ıkarmayı hedefliyoruz” dedi. 
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="" id="haber6" style="display:none;">
+                            <h1>
+                                <a href="/haberler/410/163473/emine-erdogan-togem-der-in-artsin-eksilmesin-donusum-pazari-nin-acilisina-katildi">
+                                    Emine Erdoğan, TOGEM-DER&#39;in &quot;Artsın Eksilmesin D&#246;n&#252;ş&#252;m Pazarı&quot;nın a&#231;ılışına katıldı
+                                </a>
+                            </h1>
+                            <div id="highlights-wrapper">
+                                <div id="highlights-main-media">
+                                    <a href="/haberler/410/163473/emine-erdogan-togem-der-in-artsin-eksilmesin-donusum-pazari-nin-acilisina-katildi">
+                                        <img src="/assets/resim/haberler/2025B/2025-12-14-EmineErdogan-Donusum.jpg" width="400" alt="Emine Erdoğan, TOGEM-DER&#39;in &quot;Artsın Eksilmesin D&#246;n&#252;ş&#252;m Pazarı&quot;nın a&#231;ılışına katıldı" title="">
+                                    </a>
+                                </div>
+                                <span id="highlights-foto-album-image-list" style="display: none;">
+                                </span>
+                                <div id="highlights-other-news">
+                                    <p id="highlights-main-description">
+                                        <a id="spotlink" href="/haberler/410/163473/emine-erdogan-togem-der-in-artsin-eksilmesin-donusum-pazari-nin-acilisina-katildi">
+                                            Cumhurbaşkanı Recep Tayyip Erdoğan&#39;ın eşi Emine Erdoğan, Toplumsal Gelişim Merkezi Eğitim ve Sosyal Dayanışma Derneğinin (TOGEM-DER) &quot;Artsın Eksilmesin D&#246;n&#252;ş&#252;m Pazarı&quot;nın a&#231;ılışını ger&#231;ekleştirdi.
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <div id="highlights-navbar">
+                        <span onclick="location.href='/haberler/'" style="width: auto;">T&#252;m&#252;</span>
+
+
+                        <span onclick="javascript: GetNews(this, 'haber6');" id="6">6</span>
+                        <span onclick="javascript: GetNews(this, 'haber5');" id="5">5</span>
+                        <span onclick="javascript: GetNews(this, 'haber4');" id="4">4</span>
+                        <span onclick="javascript: GetNews(this, 'haber3');" id="3">3</span>
+                        <span onclick="javascript: GetNews(this, 'haber2');" id="2">2</span>
+                        <span onclick="javascript: GetNews(this, 'haber1');" id="1" class="current">1</span>
+
+            </div>
+        </div>
+
+        <div id="blog-press-wrapper">
+            <div id="blog-column">
+                <h1>
+                    
+                    Cumhurbaşkanlığı G&#252;ndeminden
+                </h1>
+
+                    <dl>
+                        <dt>17<span>Ara</span></dt>
+                        <dd>
+                            <h2>
+                                <a href="/haberler/410/163517/cumhurbaskani-erdogan-ysk-baskani-yener-i-kabul-etti">
+                                    Cumhurbaşkanı Erdoğan, YSK Başkanı Yener’i kabul etti
+                                </a>
+                            </h2>
+                            <p>
+
+                                <img src="/ImageResizer/CropImage?w=90&h=60&f=/assets/resim/haberler/2025B/2025-12-17-Ysk.jpg" width="90" height="60" alt="Cumhurbaşkanı Erdoğan, YSK Başkanı Yener’i kabul etti">Cumhurbaşkanı Recep Tayyip Erdoğan, Y&#252;ksek Se&#231;im Kurulu (YSK) Başkanı Ahmet Yener’i Cumhurbaşkanlığı K&#252;lliyesinde kabul etti.
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>17<span>Ara</span></dt>
+                        <dd>
+                            <h2>
+                                <a href="/haberler/410/163513/cumhurbaskani-erdogan-gazze-de-hayatini-kaybeden-rajab-in-ailesini-kabul-etti">
+                                    Cumhurbaşkanı Erdoğan, Gazze&#39;de hayatını kaybeden Rajab’ın ailesini kabul etti
+                                </a>
+                            </h2>
+                            <p>
+
+                                <img src="/ImageResizer/CropImage?w=90&h=60&f=/assets/resim/haberler/2025B/2025-12-17-HindRajab.jpg" width="90" height="60" alt="Cumhurbaşkanı Erdoğan, Gazze&#39;de hayatını kaybeden Rajab’ın ailesini kabul etti">Cumhurbaşkanı Recep Tayyip Erdoğan, Gazze’de İsrail&#39;in saldırısı sonucu bir ara&#231;ta mahsur kalarak hayatını kaybeden 6 yaşındaki Filistinli Hind Rajab’ın ailesini ve akrabalarını Cumhurbaşkanlığı K&#252;lliyesinde kabul etti.
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>10<span>Ara</span></dt>
+                        <dd>
+                            <h2>
+                                <a href="/haberler/410/163423/cumhurbaskanligi-yuksek-istisare-kurulu-cumhurbaskani-erdogan-baskanliginda-toplandi">
+                                    Cumhurbaşkanlığı Y&#252;ksek İstişare Kurulu, Cumhurbaşkanı Erdoğan başkanlığında toplandı
+                                </a>
+                            </h2>
+                            <p>
+
+                                <img src="/ImageResizer/CropImage?w=90&h=60&f=/assets/resim/haberler/2025B/2025-12-10-yik.jpg" width="90" height="60" alt="Cumhurbaşkanlığı Y&#252;ksek İstişare Kurulu, Cumhurbaşkanı Erdoğan başkanlığında toplandı">Cumhurbaşkanlığı Y&#252;ksek İstişare Kurulu, Cumhurbaşkanı Recep Tayyip Erdoğan başkanlığında Cumhurbaşkanlığı K&#252;lliyesinde toplandı.
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>8<span>Ara</span></dt>
+                        <dd>
+                            <h2>
+                                <a href="/haberler/410/163392/cumhurbaskani-erdogan-filistinli-yonetmen-basel-adra-yi-kabul-etti-">
+                                    Cumhurbaşkanı Erdoğan, Filistinli y&#246;netmen Basel Adra’yı kabul etti 
+                                </a>
+                            </h2>
+                            <p>
+
+                                <img src="/ImageResizer/CropImage?w=90&h=60&f=/assets/resim/haberler/2025B/2025-12-08-Filistin.jpg" width="90" height="60" alt="Cumhurbaşkanı Erdoğan, Filistinli y&#246;netmen Basel Adra’yı kabul etti ">Cumhurbaşkanı Recep Tayyip Erdoğan, Filistinli y&#246;netmen Basel Adra&#39;yı Cumhurbaşkanlığı Dolmabah&#231;e Ofisi’nde kabul etti.
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>4<span>Ara</span></dt>
+                        <dd>
+                            <h2>
+                                <a href="/haberler/410/163354/cumhurbaskani-erdogan-cesitli-branslarda-madalya-kazanan-sporculari-kabul-etti">
+                                    Cumhurbaşkanı Erdoğan, &#231;eşitli branşlarda madalya kazanan sporcuları kabul etti
+                                </a>
+                            </h2>
+                            <p>
+
+                                <img src="/ImageResizer/CropImage?w=90&h=60&f=/assets/resim/haberler/2025B/2025-12-04-Sporcular.jpg" width="90" height="60" alt="Cumhurbaşkanı Erdoğan, &#231;eşitli branşlarda madalya kazanan sporcuları kabul etti">Cumhurbaşkanı Recep Tayyip Erdoğan, 2020-2025 yıllarında d&#252;zenlenen Avrupa ve d&#252;nya şampiyonaları ile olimpiyatlarda tekvando, halter ve karate branşlarında başarı g&#246;steren sporcuları Cumhurbaşkanlığı K&#252;lliyesinde kabul etti.
+                            </p>
+                        </dd>
+                    </dl>
+
+                <p id="blog-browse-all-posts">
+                            <a href="/haberler/">T&#252;m Haberler</a>
+
+
+                </p>
+            </div>
+
+            <div id="press-addressing-column">
+
+                <div id="presstab" style="background: url(&quot;/Images/press-tab-on.jpg&quot;);">
+                    <h1 id="cbbasin">
+                        <a href="javascript:void(0);" onclick="javascript:StatementTab1();">Basın 
+      Açıklamaları</a>
+                    </h1>
+                    <h1 id="cbsozcu">
+                        <a href="javascript:void(0);" onclick="javascript:StatementTab2();">Cumhurbaşkanlığı 
+    Sözcülüğünden</a>
+                    </h1>
+                </div>
+
+                <div id="cbBasinMain">
+                        <p>
+                            <span>
+                                10.12.2025
+                            </span>
+                            <a href="/basin-aciklamalari/365/163425/sayin-cumhurbaskanimizin-turkmenistan-ziyaretlerine-iliskin-basin-aciklamasi">
+                                Sayın Cumhurbaşkanımızın T&#252;rkmenistan ziyaretlerine ilişkin basın a&#231;ıklaması
+                            </a>
+                        </p>
+                        <p>
+                            <span>
+                                10.12.2025
+                            </span>
+                            <a href="/basin-aciklamalari/365/163418/sayin-cumhurbaskanimizin-10-aralik-insan-haklari-gunu-mesaji">
+                                Sayın Cumhurbaşkanımızın 10 Aralık İnsan Hakları G&#252;n&#252; Mesajı
+                            </a>
+                        </p>
+                        <p>
+                            <span>
+                                26.11.2025
+                            </span>
+                            <a href="/basin-aciklamalari/365/163258/papa14-leo-nun-ziyaretine-iliskin-basin-aciklamasi">
+                                Papa 14. Leo’nun ziyaretine ilişkin basın a&#231;ıklaması
+                            </a>
+                        </p>
+                        <p>
+                            <span>
+                                23.11.2025
+                            </span>
+                            <a href="/basin-aciklamalari/365/163202/kore-cumhuriyeti-cumhurbaskani-lee-jae-myung-un-ziyaretine-iliskin-basin-aciklamasi-">
+                                Kore Cumhuriyeti Cumhurbaşkanı Lee Jae-myung’un ziyaretine ilişkin basın a&#231;ıklaması 
+                            </a>
+                        </p>
+                        <p>
+                            <span>
+                                20.11.2025
+                            </span>
+                            <a href="/basin-aciklamalari/365/163117/sayin-cumhurbaskanimizin-guney-afrika-cumhuriyeti-ziyaretlerine-iliskin-basin-aciklamasi">
+                                Sayın Cumhurbaşkanımızın G&#252;ney Afrika Cumhuriyeti ziyaretlerine ilişkin basın a&#231;ıklaması
+                            </a>
+                        </p>
+                        <p>
+                            <span>
+                                12.11.2025
+                            </span>
+                            <a href="/basin-aciklamalari/365/162999/kuzey-kibris-turk-cumhuriyeti-cumhurbaskani-tufan-erhurman-in-ziyaretine-iliskin-basin-aciklamasi">
+                                Kuzey Kıbrıs T&#252;rk Cumhuriyeti Cumhurbaşkanı Tufan Erh&#252;rman’ın ziyaretine ilişkin basın a&#231;ıklaması
+                            </a>
+                        </p>
+                        <p>
+                            <span>
+                                29.10.2025
+                            </span>
+                            <a href="/basin-aciklamalari/365/161803/29-ekim-cumhuriyet-bayrami-mesaji">
+                                29 Ekim Cumhuriyet Bayramı Mesajı
+                            </a>
+                        </p>
+
+                    
+                    <p id="press-addressing-browse-all-posts">
+                                <a href="/faaliyetler/basinaciklamalari/">Basın A&#231;ıklamaları Arşivi</a>
+
+                    </p>
+                </div>
+
+                <div id="cbSozcuMain" style="display: none;">
+
+                        <p>
+                            <span>
+                                02.05.2024
+                            </span>
+                            <a href="/cumhurbaskanligi-sozculugunden/1695/152228/daimi-ortak-mekanizma-nin-6-toplantisi-cumhurbaskani-dis-politika-ve-guvenlik-basdanismani-buyukelci-akif-cagatay-kilic-in-baskanliginda-gerceklestirildi">
+                                Daimi Ortak Mekanizma’nın 6. Toplantısı, Cumhurbaşkanı Dış Politika ve G&#252;venlik Başdanışmanı B&#252;y&#252;kel&#231;i Akif &#199;ağatay Kılı&#231;’ın başkanlığında ger&#231;ekleştirildi
+                            </a>
+                        </p>
+                        <p>
+                            <span>
+                                05.04.2023
+                            </span>
+                            <a href="/cumhurbaskanligi-sozculugunden/1695/145582/cumhurbaskanligi-sozcusu-buyukelci-ibrahim-kalin-in-birlesik-krallik-ulusal-guvenlik-danismani-tim-barrow-ile-gerceklestirdigi-telefon-gorusmesine-iliskin-basin-aciklamasi">
+                                Cumhurbaşkanlığı S&#246;zc&#252;s&#252; B&#252;y&#252;kel&#231;i İbrahim Kalın’ın Birleşik Krallık Ulusal G&#252;venlik Danışmanı Tim Barrow ile Ger&#231;ekleştirdiği Telefon G&#246;r&#252;şmesine İlişkin Basın A&#231;ıklaması
+                            </a>
+                        </p>
+                        <p>
+                            <span>
+                                14.03.2023
+                            </span>
+                            <a href="/cumhurbaskanligi-sozculugunden/1695/144252/cumhurbaskanligi-sozcusu-buyukelci-ibrahim-kalin-abd-ulusal-guvenlik-danismani-jake-sullivan-ve-abd-disisleri-bakanligi-siyasi-isler-mustesari-victoria-nuland-ile-gorustu">
+                                Cumhurbaşkanlığı S&#246;zc&#252;s&#252; B&#252;y&#252;kel&#231;i İbrahim Kalın, ABD Ulusal G&#252;venlik Danışmanı Jake Sullivan ve ABD Dışişleri Bakanlığı Siyasi İşler M&#252;steşarı Victoria Nuland ile G&#246;r&#252;şt&#252;
+                            </a>
+                        </p>
+                        <p>
+                            <span>
+                                14.03.2023
+                            </span>
+                            <a href="/cumhurbaskanligi-sozculugunden/1695/144217/cumhurbaskanligi-sozcusu-buyukelci-ibrahim-kalin-jake-sullivan-ve-victoria-nuland-ile-gorusmeler">
+                                Cumhurbaşkanlığı S&#246;zc&#252;s&#252; B&#252;y&#252;kel&#231;i İbrahim Kalın’ın, ABD Ulusal G&#252;venlik Danışmanı Jake Sullivan ve ABD Dışişleri Bakanlığı Siyasi İşler M&#252;steşarı Victoria Nuland ile Ger&#231;ekleştirdiği G&#246;r&#252;şmelere İlişkin Basın A&#231;ıklaması 
+                            </a>
+                        </p>
+
+                    
+                    <p id="press-addressing-browse-all-posts">
+                                <a href="/faaliyetler/cumhurbaskanligisozculugunden/">Cumhurbaşkanlığı S&#246;zc&#252;l&#252;ğ&#252; Arşivi</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+            
+
+            
+
+
+<div id="footernew" style="background:url(/Images/assets/golge.png) top center no-repeat; background-color:#2e2e2e;">
+
+    <div class="footer01" style="background:url(/Images/assets/footerborderb.png) bottom center repeat-x;">
+        <div id="footer-first-row">
+            <div id="footer-first-row-ataturk">
+
+                    <a href="/ata_ozel/biyografi/"><img src="/Images/assets/ataturkozela1.png"></a>
+
+            </div>
+            <div id="footer-first-row-projects" style="background:url(/Images/assets/projelerbuton.png) center bottom 8px no-repeat;">
+                <div class="projelerbaslik" style="">
+                        <img src="/Images/assets/projeler1.png">
+
+                </div>
+                <div id="footer-first-row-projects-carousel">
+                    <div class=" jcarousel-skin-tango">
+                        <div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
+                            <div class="jcarousel-clip jcarousel-clip-horizontal" style="overflow: hidden; position: relative;">
+                                <ul id="footer-jcarousel" class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0; left: 0; margin: 0; padding: 0; width: 1000px;">
+
+                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal jcarouselLogoFrame" jcarouselindex="1">
+                                            <a href="/faaliyetler/himaye-edilen-projeler/" target="_self">
+                                                <div>
+                                                    <img src="/assets/resim/banner/projeler/p_Getat_logo.jpg" title="3. Geleneksel ve Tamamlayıcı Tıp Kongresi ve Uluslararası Geleneksel ve Tamamlayıcı Tıp &#199;alıştayı">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-2 jcarousel-item-2-horizontal jcarouselLogoFrame" jcarouselindex="2">
+                                            <a href="/faaliyetler/himaye-edilen-projeler/" target="_self">
+                                                <div>
+                                                    <img src="/assets/resim/banner/projeler/p_UCI_logo.jpg" title="2025 UCI Dağ Bisikleti Eliminator D&#252;nya Şampiyonası ve D&#252;nya Kupası">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-3 jcarousel-item-3-horizontal jcarouselLogoFrame" jcarouselindex="3">
+                                            <a href="/faaliyetler/himaye-edilen-projeler/" target="_self">
+                                                <div>
+                                                    <img src="/assets/resim/banner/projeler/p_tuba.png" title="T&#220;BA Bilim &#214;d&#252;lleri">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-4 jcarousel-item-4-horizontal jcarouselLogoFrame" jcarouselindex="4">
+                                            <a href="/faaliyetler/himaye-edilen-projeler/" target="_self">
+                                                <div>
+                                                    <img src="/assets/resim/banner/projeler/motokros.png" title="D&#252;nya Motokros Şampiyonası (MXGP of T&#252;rkiye)">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-5 jcarousel-item-5-horizontal jcarouselLogoFrame" jcarouselindex="5">
+                                            <a href="/faaliyetler/himaye-edilen-projeler/" target="_self">
+                                                <div>
+                                                    <img src="/assets/resim/banner/projeler/p-sakarya-bisiklet.png" title="Uluslararası Sakarya Bisiklet Festivali">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-6 jcarousel-item-6-horizontal jcarouselLogoFrame" jcarouselindex="6">
+                                            <a href="/faaliyetler/himaye-edilen-projeler/" target="_self">
+                                                <div>
+                                                    <img src="/assets/resim/banner/projeler/bisiklet-logo.png" title="Cumhurbaşkanlığı T&#252;rkiye Bisiklet Turu">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-7 jcarousel-item-7-horizontal jcarouselLogoFrame" jcarouselindex="7">
+                                            <a href="/faaliyetler/himaye-edilen-projeler/" target="_self">
+                                                <div>
+                                                    <img src="/assets/resim/banner/projeler/yatyarislari.png" title="Cumhurbaşkanlığı Uluslararası Yat Yarışları ">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-8 jcarousel-item-8-horizontal jcarouselLogoFrame" jcarouselindex="8">
+                                            <a href="/faaliyetler/himaye-edilen-projeler/" target="_self">
+                                                <div>
+                                                    <img src="/assets/resim/banner/projeler/idef2025.jpg" title="IDEF 2025 17’nci Uluslararası Savunma Sanayii Fuarı">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-9 jcarousel-item-9-horizontal jcarouselLogoFrame" jcarouselindex="9">
+                                            <a href="/faaliyetler/himaye-edilen-projeler/" target="_self">
+                                                <div>
+                                                    <img src="/assets/resim/banner/p_antarktika_ustlogo.png" title="Antarktika Bilimsel Araştırma &#220;ss&#252; Projesi">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-10 jcarousel-item-10-horizontal jcarouselLogoFrame" jcarouselindex="10">
+                                            <a href="/faaliyetler/himaye-edilen-projeler/" target="_self">
+                                                <div>
+                                                    <img src="/assets/resim/banner/projeler/sahaexpo-logo.jpg" title="SAHA 2026 Uluslararası Savunma, Havacılık ve Uzay Sanayi Fuarı">
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                </ul>
+                            </div>
+                            <div class="jcarousel-prev jcarousel-prev-horizontal jcarousel-prev-disabled jcarousel-prev-disabled-horizontal" style="display: block;" disabled="disabled"></div>
+                            <div class="jcarousel-next jcarousel-next-horizontal" style="display: block;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer02">
+        <div class="tr01" style="background:url(/Images/assets/kulliye04.png) center bottom 5px no-repeat;">
+
+                        <ul>
+                            <li><a href="/receptayyiperdogan/" title="Recep Tayyip Erdoğan"><strong>Recep Tayyip Erdoğan</strong> </a></li>
+
+                                        <li><a target="_self" href="/receptayyiperdogan/biyografi/" title="Biyografi">Biyografi</a></li>
+                                        <li><a target="_self" href="/receptayyiperdogan/portreler/" title="Portreler">Portreler</a></li>
+                                        <li><a target="_self" href="/receptayyiperdogan/mulakatlar/" title="M&#252;lakatlar">M&#252;lakatlar</a></li>
+                                        <li><a target="_self" href="/receptayyiperdogan/konusmalar/" title="Konuşmalar">Konuşmalar</a></li>
+                                        <li><a target="_self" href="/receptayyiperdogan/makaleler/" title="Makaleler">Makaleler</a></li>
+                                        <li><a target="_self" href="/receptayyiperdogan/yurticiziyaretler/" title="Yurt İ&#231;i Ziyaretler">Yurt İ&#231;i Ziyaretler</a></li>
+                                        <li><a target="_self" href="/receptayyiperdogan/yurtdisiziyaretler/" title="Yurt Dışı Ziyaretler">Yurt Dışı Ziyaretler</a></li>
+                                        <li><a target="_self" href="/receptayyiperdogan/konuk/" title="Konuklar">Konuklar</a></li>
+                                        <li><a target="_self" href="/ozeldosyalar/" title="&#214;zel Dosyalar">&#214;zel Dosyalar</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="/emineerdogan/" title="Emine Erdoğan"><strong>Emine Erdoğan</strong> </a></li>
+
+                                        <li><a target="_self" href="/emineerdogan/biyografi/" title="Biyografi">Biyografi</a></li>
+                                        <li><a target="_self" href="/emineerdogan/portreler/" title="Portreler">Portreler</a></li>
+                                        <li><a target="_self" href="/emineerdogan/konusmalar/" title="Konuşmalar">Konuşmalar</a></li>
+                                        <li><a target="_self" href="/emineerdogan/yurticiziyaretler/" title="Yurt İ&#231;i Ziyaretler">Yurt İ&#231;i Ziyaretler</a></li>
+                                        <li><a target="_self" href="/emineerdogan/yurtdisiziyaretler/" title="Yurt Dışı Ziyaretler">Yurt Dışı Ziyaretler</a></li>
+                                        <li><a target="_self" href="/hanimefendi/projeler/" title="Himaye Edilen Projeler">Himaye Edilen Projeler</a></li>
+                                        <li><a target="_self" href="/emineerdogan/makaleveroportajlar/" title="Makale ve R&#246;portajlar">Makale ve R&#246;portajlar</a></li>
+                                        <li><a target="_self" href="/emineerdogan/videogaleri/" title="Video Galeri">Video Galeri</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="#/" title="Faaliyetler"><strong>Faaliyetler</strong> </a></li>
+
+                                        <li><a target="_self" href="/faaliyetler/basinaciklamalari/" title="Basın A&#231;ıklamaları">Basın A&#231;ıklamaları</a></li>
+                                        <li><a target="_self" href="/faaliyetler/cumhurbaskanligisozculugunden/" title="Cumhurbaşkanlığı S&#246;zc&#252;l&#252;ğ&#252;nden">Cumhurbaşkanlığı S&#246;zc&#252;l&#252;ğ&#252;nden</a></li>
+                                        <li><a target="_self" href="/faaliyetler/frekansbilgileri/" title="Frekans Bilgileri">Frekans Bilgileri</a></li>
+                                        <li><a target="_self" href="/faaliyetler/himaye-edilen-projeler/" title="Himaye Edilen Projeler">Himaye Edilen Projeler</a></li>
+                                        <li><a target="_self" href="/faaliyetler/tamamlanan-projeler/" title="Tamamlanan Projeler">Tamamlanan Projeler</a></li>
+                                        <li><a target="_self" href="/faaliyetler/15temmuz/" title="15 Temmuz">15 Temmuz</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="#/" title="Cumhurbaşkanlığı"><strong>Cumhurbaşkanlığı</strong> </a></li>
+
+                                        <li><a target="_self" href="/kabine/" title="Cumhurbaşkanlığı Kabinesi">Cumhurbaşkanlığı Kabinesi</a></li>
+                                        <li><a target="_self" href="/cumhurbaskanlarimiz/" title="Cumhurbaşkanlarımız">Cumhurbaşkanlarımız</a></li>
+                                        <li><a target="_self" href="/cumhurbaskanligi/genelsekreter/" title="Genel Sekreter">Genel Sekreter</a></li>
+                                        <li><a target="_self" href="/ozelkalem/" title="&#214;zel Kalem M&#252;d&#252;rleri">&#214;zel Kalem M&#252;d&#252;rleri</a></li>
+                                        <li><a target="_self" href="/cumhurbaskanligi/resmi-simgeler/bayrak/" title="Resm&#238; Simgeler">Resm&#238; Simgeler</a></li>
+                                        <li><a target="_self" href="/cumhurbaskanligi/gorev_yetki/" title="G&#246;rev ve Yetkiler">G&#246;rev ve Yetkiler</a></li>
+                                        <li><a target="_self" href="/cumhurbaskanligi/yerleskeler/tarabya_yerleskesi/" title="Tarabya Yerleşkesi">Tarabya Yerleşkesi</a></li>
+                                        <li><a target="_self" href="/muzekosk/" title="Atat&#252;rk M&#252;ze K&#246;şk&#252;">Atat&#252;rk M&#252;ze K&#246;şk&#252;</a></li>
+                                        <li><a target="_self" href="/cumhurbaskanligi/kongre-ve-kultur-merkezi/" title="Kongre ve K&#252;lt&#252;r Merkezi">Kongre ve K&#252;lt&#252;r Merkezi</a></li>
+                                        <li><a target="_self" href="/cumhurbaskanligi/millet-kutuphanesi/" title="Millet K&#252;t&#252;phanesi">Millet K&#252;t&#252;phanesi</a></li>
+                                        <li><a target="_self" href="/cumhurbaskanligi/arsivformu/" title="Arşiv Formu">Arşiv Formu</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="#/" title="Bilgi Edinme"><strong>Bilgi Edinme</strong> </a></li>
+
+                                        <li><a target="_blank" href="http://www.resmigazete.gov.tr/" title="Resm&#238; Gazete">Resm&#238; Gazete</a></li>
+                                        <li><a target="_blank" href="http://www.mevzuat.gov.tr/" title="e-Mevzuat">e-Mevzuat</a></li>
+                                        <li><a target="_blank" href="https://www.cimer.gov.tr/" title="CİMER">CİMER</a></li>
+                                        <li><a target="_blank" href="https://detsis.gov.tr/" title="DETSİS">DETSİS</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="/iletisim/" title="İletişim"><strong>İletişim</strong> </a></li>
+
+                                        <li><a target="_self" href="/iletisim/" title="İletişim Bilgileri">İletişim Bilgileri</a></li>
+                                        <li><a target="_self" href="/iletisim/kurumsalkimlik/" title="Kurumsal Kimlik">Kurumsal Kimlik</a></li>
+                                        <li><a target="_self" href="/edevlet/" title="e-Devlet Kapısı">e-Devlet Kapısı</a></li>
+
+                        </ul>
+
+                <p><strong><a href="ftp://ftp.tccb.gov.tr/">Basına Özel</a></strong></p>
+        </div>
+    </div>
+
+    <div class="footer03" style="background:url(/Images/assets/footerborderb.png) top center repeat-x;">
+        <div class="tr01">
+            <div class="td01">
+                    <img src="/Images/assets/logoo1.png">
+            </div>
+            <div class="td02">
+                
+      <p><strong>T.C. Cumhurbaşkanlığı Kurumsal İnternet Sayfası</strong></p>
+      <p>Cumhurbaşkanlığı Külliyesi<span class="footer_arial"> 06560</span> Beştepe - Ankara </p>
+      <p>Tel: <span class="footer_arial">0 (312) 525 55 55</span>   Faks: <span class="footer_arial">0 (312) 525 58 31</span></p>
+  
+            </div>
+            <div class="td03">
+                <div class="td04">
+                    <div class="tr02">
+                        Cumhurbaşkanını Takip Edin
+                    </div>
+                    <div class="tr02">
+
+
+
+                        <a href="https://twitter.com/RTErdogan" target="_blank"><img src="/Images/footer/yeni/twitter01a.png"></a>
+                        <a href="https://www.facebook.com/RTErdogan" target="_blank"><img src="/Images/footer/yeni/facebook01a.png"></a>
+                        <a href="https://www.instagram.com/rterdogan/" target="_blank"><img src="/Images/footer/yeni/instagram01a.png"></a>
+                        <a href="https://bit.ly/RTEYouTube" target="_blank"><img src="/Images/footer/yeni/youtube01a.png"></a>
+                    </div>
+                </div>
+                <div class="td05">
+                    <div class="tr02">
+                        Cumhurbaşkanlığını Takip Edin
+                    </div>
+                    <div class="tr02">
+
+
+
+                        <a href="https://twitter.com/tcbestepe" target="_blank"><img src="/Images/footer/yeni/twitter01a.png"></a>
+                        <a href="https://www.facebook.com/tcbestepe" target="_blank"><img src="/Images/footer/yeni/facebook01a.png"></a>
+                        <a href="https://www.instagram.com/tcbestepe/" target="_blank"><img src="/Images/footer/yeni/instagram01a.png"></a>
+                        <a href="https://www.youtube.com/c/tcbestepe" target="_blank"><img src="/Images/footer/yeni/youtube01a.png"></a>
+                        
+                        <a href="https://itunes.apple.com/tr/app/turkiye-cumhuriyeti-cumhurbaskanl/id532279371?l=tr&amp;amp;mt=8" target="_blank"><img src="/Images/footer/yeni/ios01a.png"></a>
+                        <a href="https://play.google.com/store/apps/details?id=tr.gov.tccb.android" target="_blank"><img src="/Images/footer/yeni/android01a.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/assets/dosya/resmiyazisma/varliklar/scripts/ryfooter.js"></script>
+<script src="/assets/dosya/js/tccbfooter.js"></script>
+<script type="text/javascript" id="loadMobileJs"></script>
+
+
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXRKVZ2L7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XCXRKVZ2L7');
+</script>
+
+        </div>
+    </div>
+
+</body>
+</html>
